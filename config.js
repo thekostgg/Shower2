@@ -2,14 +2,22 @@
 window.CONFIG = {
   // Fecha y hora del baby shower (hora de Chile en diciembre = UTC-3)
   EVENTO: '2026-12-12T17:00:00-03:00',
+  EVENTO_FIN: '2026-12-12T20:00:00-03:00',
+  TITULO: 'Baby Shower de Santiago',
+  LUGAR: 'El Roble 2171, Concepción, Chile',
 
-  // Dirección para "Ver ubicación"
+  // "Ver ubicación"
   MAPA_URL: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('El Roble 2171, Concepción, Chile'),
 
-  // Enlace de la lista de deseos (déjalo vacío si todavía no existe)
-  REGALOS_URL: '',
+  // "Ver lista de deseos"
+  REGALOS_URL: 'https://happygiftlist.com/es/lista-de-deseos/k5hpeiam',
 
-  // URL del Apps Script de Google que guarda la respuesta y envía el correo.
-  // Se obtiene al publicar apps-script/Codigo.gs (ver LEEME.md).
-  CONFIRMAR_URL: '',
+  // Confirmación por WhatsApp (número con código de país, sin + ni espacios)
+  WHATSAPP: {
+    Marcia: '56949046750',
+    'Ángel': '56942038860',
+  },
+
+  // Archivo de calendario (iPhone y computador) con alertas el día del evento y 1 hora antes
+  ICS: 'assets/babyshower-santiago.ics',
 };
