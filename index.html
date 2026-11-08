@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baby Shower de Santiago</title>
+<meta name="description" content="Marcia y Ángel te invitan al baby shower de Santiago. Sábado 12 de diciembre de 2026, 17:00 hrs.">
+<meta property="og:title" content="Baby Shower de Santiago">
+<meta property="og:description" content="La vida está por volverse un poquito más dulce… Sábado 12 de diciembre, 17:00 hrs.">
+<meta property="og:image" content="assets/gen/compartir.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#cfe6f7">
+<link rel="icon" href="assets/gen/p0_sello.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="cerrado">
+  <div id="cargando" aria-hidden="true"><div class="gota"></div></div>
+
+  <section id="intro" aria-label="Sobre de la invitación"></section>
+
+  <main id="inv" aria-label="Invitación"></main>
+
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="m-titulo" hidden>
+    <div class="m-caja">
+      <button class="m-cerrar" type="button" aria-label="Cerrar">×</button>
+      <h2 id="m-titulo">Confirmar asistencia</h2>
+      <p class="m-sub">Confirma hasta el lunes 30 de noviembre.</p>
+      <form id="f-confirmar" novalidate>
+        <label>Nombre y apellido
+          <input name="nombre" required maxlength="80" autocomplete="name">
+        </label>
+        <fieldset>
+          <legend>¿Podrás acompañarnos?</legend>
+          <label class="op"><input type="radio" name="asiste" value="Sí" checked> ¡Sí, ahí estaré!</label>
+          <label class="op"><input type="radio" name="asiste" value="No"> No podré asistir</label>
+        </fieldset>
+        <label class="personas">¿Cuántas personas vienen, contándote?
+          <input name="personas" type="number" min="1" max="15" value="1" inputmode="numeric">
+        </label>
+        <label>Mensaje para Marcia y Ángel <small>(opcional)</small>
+          <textarea name="mensaje" rows="3" maxlength="500"></textarea>
+        </label>
+        <input class="trampa" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="m-enviar" type="submit">Enviar confirmación</button>
+        <p class="m-estado" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="aviso" role="status" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="assets/gen/manifest.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
