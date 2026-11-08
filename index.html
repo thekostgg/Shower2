@@ -15,18 +15,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body class="cerrado">
   <div id="cargando" aria-hidden="true"><div class="gota"></div></div>
+  <script>setTimeout(function(){var c=document.getElementById('cargando');if(c)c.className='fuera';},7000);</script>
 
-  <div id="marco">
-    <section id="intro" aria-label="Sobre de la invitación"></section>
-    <main id="inv" aria-label="Invitación"><div class="pista"></div></main>
-    <div id="hojas" aria-hidden="true"></div>
-    <nav id="puntos" aria-label="Páginas"></nav>
-    <button id="flecha" type="button" aria-label="Siguiente página"></button>
-  </div>
+  <section id="intro" aria-label="Sobre de la invitación"></section>
+  <main id="inv" aria-label="Invitación"></main>
+  <div id="hojas" aria-hidden="true"></div>
 
   <div id="modal" role="dialog" aria-modal="true" aria-labelledby="m-titulo" hidden>
     <div class="m-caja">
@@ -48,8 +45,8 @@
 
   <div id="aviso" role="status" hidden></div>
 
-  <script src="config.js?v=3"></script>
-  <script src="assets/gen/manifest.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="config.js?v=4"></script>
+  <script src="assets/gen/manifest.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
